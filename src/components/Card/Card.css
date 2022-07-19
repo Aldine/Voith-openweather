@@ -1,0 +1,7 @@
+.main {
+   margin: 0px auto;
+   padding: 10px;
+   border-radius: 20px;
+   background-image: linear-gradient(#11b2fd, #1382f5);
+   filter: drop-shadow(30px 10px 4px rgb(0 0 0 / 10%));
+}
