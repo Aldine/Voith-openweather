@@ -5,7 +5,6 @@ import Text from '../Text/Text';
 import { getWeather } from '../../service';
 
 function Weather() {
-   console.log('render');
    const [apiResponse, setApiResponse] = useState({});
 
    const getWeatherData = () => {
@@ -13,7 +12,7 @@ function Weather() {
          .then(res => setApiResponse(res))
          .catch(e => console.log(e.message));
    };
-   
+
    useEffect(() => {
       const timer = setInterval(getWeatherData, 2000);
       return () => clearInterval(timer);
